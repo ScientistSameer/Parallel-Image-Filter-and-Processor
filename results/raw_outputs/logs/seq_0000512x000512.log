@@ -1,0 +1,5 @@
+[seq] gray=512x512 rgb=512x512
+RESULT,sequential,gaussian_blur,1,512,512,0.003418
+RESULT,sequential,sobel,1,512,512,0.002081
+RESULT,sequential,sharpen,1,512,512,0.000491
+RESULT,sequential,grayscale,1,512,512,0.001004

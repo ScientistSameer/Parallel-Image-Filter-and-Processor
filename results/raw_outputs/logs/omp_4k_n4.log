@@ -1,0 +1,4 @@
+RESULT,openmp,gaussian_blur,4,3840,2160,0.019993
+RESULT,openmp,sobel,4,3840,2160,0.014426
+RESULT,openmp,sharpen,4,3840,2160,0.003851
+RESULT,openmp,grayscale,4,3840,2160,0.007444

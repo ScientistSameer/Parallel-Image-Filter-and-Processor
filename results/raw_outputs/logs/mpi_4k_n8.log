@@ -1,0 +1,4 @@
+RESULT,mpi,gaussian_blur,8,3840,2160,0.078173
+RESULT,mpi,sobel,8,3840,2160,0.055437
+RESULT,mpi,sharpen,8,3840,2160,0.142710
+RESULT,mpi,grayscale,8,3840,2160,0.116641

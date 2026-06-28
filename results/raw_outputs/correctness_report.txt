@@ -1,0 +1,57 @@
+Correctness report -- generated 2026-06-28 19:01:55 UTC
+All four implementations run on data/generated/strong_gray_0000512x000512.pgm
+and the matching RGB image, compared byte-for-byte against the sequential
+baseline output (cmp -s). PASS means zero byte difference. If the optional
+real-dataset experiment (step 7/7) is enabled, its batch-mode code path is
+checked the same way, on a 50-image subset of the real photographs.
+
+[PASS] pth workers=1 filter=gaussian
+[PASS] omp workers=1 filter=gaussian
+[PASS] mpi workers=1 filter=gaussian
+[PASS] pth workers=1 filter=sobel
+[PASS] omp workers=1 filter=sobel
+[PASS] mpi workers=1 filter=sobel
+[PASS] pth workers=1 filter=sharpen
+[PASS] omp workers=1 filter=sharpen
+[PASS] mpi workers=1 filter=sharpen
+[PASS] pth workers=1 filter=grayscale
+[PASS] omp workers=1 filter=grayscale
+[PASS] mpi workers=1 filter=grayscale
+[PASS] pth workers=2 filter=gaussian
+[PASS] omp workers=2 filter=gaussian
+[PASS] mpi workers=2 filter=gaussian
+[PASS] pth workers=2 filter=sobel
+[PASS] omp workers=2 filter=sobel
+[PASS] mpi workers=2 filter=sobel
+[PASS] pth workers=2 filter=sharpen
+[PASS] omp workers=2 filter=sharpen
+[PASS] mpi workers=2 filter=sharpen
+[PASS] pth workers=2 filter=grayscale
+[PASS] omp workers=2 filter=grayscale
+[PASS] mpi workers=2 filter=grayscale
+[PASS] pth workers=4 filter=gaussian
+[PASS] omp workers=4 filter=gaussian
+[PASS] mpi workers=4 filter=gaussian
+[PASS] pth workers=4 filter=sobel
+[PASS] omp workers=4 filter=sobel
+[PASS] mpi workers=4 filter=sobel
+[PASS] pth workers=4 filter=sharpen
+[PASS] omp workers=4 filter=sharpen
+[PASS] mpi workers=4 filter=sharpen
+[PASS] pth workers=4 filter=grayscale
+[PASS] omp workers=4 filter=grayscale
+[PASS] mpi workers=4 filter=grayscale
+[PASS] pth workers=8 filter=gaussian
+[PASS] omp workers=8 filter=gaussian
+[PASS] mpi workers=8 filter=gaussian
+[PASS] pth workers=8 filter=sobel
+[PASS] omp workers=8 filter=sobel
+[PASS] mpi workers=8 filter=sobel
+[PASS] pth workers=8 filter=sharpen
+[PASS] omp workers=8 filter=sharpen
+[PASS] mpi workers=8 filter=sharpen
+[PASS] pth workers=8 filter=grayscale
+[PASS] omp workers=8 filter=grayscale
+[PASS] mpi workers=8 filter=grayscale
+
+OVERALL: ALL OUTPUTS BYTE-IDENTICAL TO THE SEQUENTIAL BASELINE

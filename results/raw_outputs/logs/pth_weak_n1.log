@@ -1,0 +1,4 @@
+RESULT,pthreads,gaussian_blur,1,1920,270,0.019339
+RESULT,pthreads,sobel,1,1920,270,0.006856
+RESULT,pthreads,sharpen,1,1920,270,0.003705
+RESULT,pthreads,grayscale,1,1920,270,0.002905
